@@ -14,7 +14,7 @@ const HomePages = () => {
           buatlah website <span>impian</span> anda sekarang <span>!</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          Lorem ipsum dolor sit amet consectetur adipisig elit. Similique
           nobis optio labore, necessitatibus quae dicta neque ad maxime
           voluptatem voluptas, repellat consequuntur ullam nam a eligendi
           repellendus quod dignissimos mollitia.
