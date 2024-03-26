@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   min-height: auto;
   padding: 30px 20px;
@@ -58,4 +58,56 @@ header {
   width: 0%;
   background-color: var(--color-orange);
   transition: all .3s ease-in;
+}
+
+.nav-toggle{
+  display: none;
+}
+
+.nav-toggle i{
+  background-color: var(--color-white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: var(--color-orange);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, .7);
+  cursor: pointer;
+}
+
+@media (max-width:890px) {
+  .navbar.active{
+    border-bottom: 2px solid var(--color-white);
+    padding-bottom: 20px;
+  }
+  .nav-list{
+    position: fixed;
+    background-color: var(--color-blue-secondary);
+    top: 0;
+    right: -100%;
+    min-height: 100vh;
+    width: 100%;
+    z-index: -1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 20px;
+    justify-content: flex-start;
+  }
+
+  .nav-list.active{
+    right: 0;
+  }
+
+  .nav-toggle{
+    display: block;
+  }
+
+  .nav-link a{
+    font-size: 28px;
+    font-weight: 800;
+  }
+
 }
