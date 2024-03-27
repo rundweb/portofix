@@ -1,11 +1,30 @@
 import "./css/home.css";
-import home1 from '../assets/home (1).png'
-import home2 from '../assets/home (2).png'
+import home1 from "../assets/home (1).png";
+import home2 from "../assets/home (2).png";
 const HomePages = () => {
   return (
     <section className="home" id="home">
       <img src={home1} alt="" className="home1" />
       <img src={home2} alt="" className="home2" />
+
+      <div className="social-content">
+        <a href="">
+          <i className="bx bxl-github"></i>
+        </a>
+        <a href="">
+          <i className="bx bxl-dribbble"></i>
+        </a>
+        <a href="">
+          <i className="bx bxl-instagram"></i>
+        </a>
+        <a href="">
+          <i className="bx bxl-meta"></i>
+        </a>
+        <a href="">
+          <i className="bx bxl-tiktok"></i>
+        </a>
+      </div>
+
       <div className="home-content">
         <h1>
           Website adalah <span>segalanya</span> jadi
@@ -14,10 +33,10 @@ const HomePages = () => {
           buatlah website <span>impian</span> anda sekarang <span>!</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisig elit. Similique
-          nobis optio labore, necessitatibus quae dicta neque ad maxime
-          voluptatem voluptas, repellat consequuntur ullam nam a eligendi
-          repellendus quod dignissimos mollitia.
+          Lorem ipsum dolor sit amet consectetur adipisig elit. Similique nobis
+          optio labore, necessitatibus quae dicta neque ad maxime voluptatem
+          voluptas, repellat consequuntur ullam nam a eligendi repellendus quod
+          dignissimos mollitia.
         </p>
 
         <a href="#">

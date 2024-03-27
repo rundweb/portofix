@@ -1,8 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { menu } from "../data/main";
 // import logo from '../assets/logo.svg'
 import "./css/navbarcomponents.css";
 const NavbarComponents = () => {
+
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const scrollBottom = () => {
+    if (window.scrollY > 10) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+  
+  useEffect(()=>{
+    scrollBottom()
+
+    window.addEventListener("scroll", scrollBottom)
+  })
+
   const [mobileOpen, setMobileOpen] = useState("bx bx-menu");
   const [listOpen, setListOpen] = useState("nav-list");
   const [borderOpen, setBorderOpen] = useState("navbar");
@@ -22,7 +39,7 @@ const NavbarComponents = () => {
   };
 
   return (
-    <header>
+    <header className={scrollNav ? "ok" : ""}>
       <div className={borderOpen}>
         <div className="navbar-logo">
           <h1>

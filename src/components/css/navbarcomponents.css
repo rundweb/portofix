@@ -3,11 +3,16 @@ header {
   z-index: 100;
   width: 100%;
   min-height: auto;
-  padding: 30px 20px;
+  padding: 20px 20px 0;
   background-color: var(--color-blue-secondary);
 }
 
+.ok{
+  box-shadow: 10px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
 .navbar {
+  padding-bottom: 20px;
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
@@ -16,13 +21,13 @@ header {
   justify-content: space-between;
 }
 
-.navbar-logo h1{
+.navbar-logo h1 {
   color: var(--color-white);
   font-weight: 800;
   font-size: 34px;
 }
 
-.navbar-logo h1 span{
+.navbar-logo h1 span {
   color: var(--color-orange);
 }
 
@@ -38,15 +43,15 @@ header {
   color: var(--color-white-secondary);
   font-weight: 600;
   position: relative;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
-.nav-link a:hover{
-    color: var(--color-white);
+.nav-link a:hover {
+  color: var(--color-white);
 }
 
-.nav-link a:hover::before{
-    width: 100%;
+.nav-link a:hover::before {
+  width: 100%;
 }
 
 .nav-link a::before {
@@ -57,14 +62,14 @@ header {
   height: 2px;
   width: 0%;
   background-color: var(--color-orange);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
-.nav-toggle{
+.nav-toggle {
   display: none;
 }
 
-.nav-toggle i{
+.nav-toggle i {
   background-color: var(--color-white);
   width: 40px;
   height: 40px;
@@ -74,16 +79,34 @@ header {
   justify-content: center;
   font-size: 28px;
   color: var(--color-orange);
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, .7);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
 
-@media (max-width:890px) {
-  .navbar.active{
+.social-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  gap: 10px;
+  left: 2%;
+}
+
+.social-content i {
+  color: var(--color-white-blue);
+  font-size: 20px;
+}
+
+.social-content i:hover {
+  color: var(--color-white);
+}
+
+@media (max-width: 890px) {
+  .navbar.active {
     border-bottom: 2px solid var(--color-white);
-    padding-bottom: 20px;
   }
-  .nav-list{
+  .nav-list {
     position: fixed;
     background-color: var(--color-blue-secondary);
     top: 0;
@@ -97,17 +120,16 @@ header {
     justify-content: flex-start;
   }
 
-  .nav-list.active{
+  .nav-list.active {
     right: 0;
   }
 
-  .nav-toggle{
+  .nav-toggle {
     display: block;
   }
 
-  .nav-link a{
+  .nav-link a {
     font-size: 28px;
     font-weight: 800;
   }
-
 }
