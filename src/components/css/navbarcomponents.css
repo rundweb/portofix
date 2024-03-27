@@ -5,6 +5,8 @@ header {
   min-height: auto;
   padding: 20px 20px 0;
   background-color: var(--color-blue-secondary);
+  overflow: hidden;
+
 }
 
 .ok {

@@ -30,7 +30,7 @@ const HomePages = () => {
           Website adalah <span>segalanya</span> jadi
         </h1>
         <h1 data-aos="fade-up" data-aos-duration="1000">
-          buatlah website <span>impian</span> anda sekarang <span>!</span>
+          buatlah website <span>impian</span> anda sekarang
         </h1>
         <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           Rundweb bekerja dengan sangat praktis dan efisien sehingga website impian yang anda inginkan akan

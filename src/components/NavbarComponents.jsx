@@ -40,15 +40,15 @@ const NavbarComponents = () => {
   return (
     <header className={scrollNav ? "ok" : ""}>
       <div className={borderOpen}>
-        <div className="navbar-logo" data-aos="fade-right">
+        <div className="navbar-logo" data-aos="fade-right" data-aos-duration="1000">
           <h1>
             RundWeb<span>.</span>
           </h1>
         </div>
-        <ul className={listOpen} data-aos="fade-left">
+        <ul className={listOpen}>
           {menu.map((menus) => {
             return (
-              <li className="nav-link" key={menus.id}>
+              <li className="nav-link" key={menus.id} data-aos="fade-left" data-aos-duration="1000">
                 <a href="#">{menus.text}</a>
               </li>
             );
