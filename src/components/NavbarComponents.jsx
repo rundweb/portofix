@@ -3,7 +3,6 @@ import { menu } from "../data/main";
 // import logo from '../assets/logo.svg'
 import "./css/navbarcomponents.css";
 const NavbarComponents = () => {
-
   const [scrollNav, setScrollNav] = useState(false);
 
   const scrollBottom = () => {
@@ -13,12 +12,12 @@ const NavbarComponents = () => {
       setScrollNav(false);
     }
   };
-  
-  useEffect(()=>{
-    scrollBottom()
 
-    window.addEventListener("scroll", scrollBottom)
-  })
+  useEffect(() => {
+    scrollBottom();
+
+    window.addEventListener("scroll", scrollBottom);
+  });
 
   const [mobileOpen, setMobileOpen] = useState("bx bx-menu");
   const [listOpen, setListOpen] = useState("nav-list");
@@ -41,12 +40,12 @@ const NavbarComponents = () => {
   return (
     <header className={scrollNav ? "ok" : ""}>
       <div className={borderOpen}>
-        <div className="navbar-logo">
+        <div className="navbar-logo" data-aos="fade-right">
           <h1>
             RundWeb<span>.</span>
           </h1>
         </div>
-        <ul className={listOpen}>
+        <ul className={listOpen} data-aos="fade-left">
           {menu.map((menus) => {
             return (
               <li className="nav-link" key={menus.id}>
@@ -56,7 +55,7 @@ const NavbarComponents = () => {
           })}
         </ul>
 
-        <div className="nav-toggle" onClick={openThisMenu}>
+        <div data-aos="fade-left" className="nav-toggle" onClick={openThisMenu}>
           <i className={mobileOpen}></i>
         </div>
       </div>
