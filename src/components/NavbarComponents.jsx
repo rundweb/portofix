@@ -55,7 +55,7 @@ const NavbarComponents = () => {
           })}
         </ul>
 
-        <div data-aos="fade-up" className="nav-toggle" onClick={openThisMenu}>
+        <div data-aos="fade-up" data-aos-duration="1000" className="nav-toggle" onClick={openThisMenu}>
           <i className={mobileOpen}></i>
         </div>
       </div>
