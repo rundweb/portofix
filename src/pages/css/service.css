@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 25px;
+  padding: 40px 25px;
 }
 
 .service-content {
@@ -47,7 +47,7 @@
 }
 
 .service-text-right {
-  border-left: 2px solid var(--color-black-secondary);
+  border-left: 2px solid var(--color-blue);
   padding: 40px 0 40px 40px;
 }
 
@@ -58,14 +58,15 @@
 .service-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .service-link {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   max-width: 250px;
@@ -74,6 +75,7 @@
   /* background-color: var(--color-white-blue); */
   border-radius: 26px;
   cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .service-link:hover {
@@ -95,7 +97,7 @@
 
 .service-link h1 {
   color: var(--color-orange);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   margin: 20px 0;
 }
@@ -109,7 +111,7 @@
 .service-view a {
   color: var(--color-orange);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   align-items: center;
 }
@@ -127,7 +129,7 @@
   height: 40px;
   width: 40px;
   border-radius: 100%;
-  font-size: 28px !important;
+  font-size: 24px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,7 +137,7 @@
 }
 
 .service-link:hover .service-view i {
-  margin-left: 40px;
+  margin-left: 20px;
   background-color: var(--color-orange);
   color: var(--color-white) !important;
 }
@@ -151,4 +153,34 @@
 
 .service-link:nth-child(2) h1{
     color: #FF5670;
+}
+
+.service-link:nth-child(3) .service-icon i{
+    background-color: #ECFAFD;
+    color: #46C9EE;
+}
+
+.service-link:nth-child(3) h1{
+    color: #46C9EE;
+}
+
+
+.service-link:nth-child(4) .service-icon i{
+    background-color: #EBFAF6;
+    color: #3CD1A2;
+}
+
+.service-link:nth-child(4) h1{
+    color: #3CD1A2;
+}
+
+@media (max-width: 500px) {
+    .service-text-left h1{
+        font-size: 34px;
+    } 
+
+    .service-text-right {
+        margin-top: 20px;
+        padding: 20px 0 20px 20px;
+    }
 }
