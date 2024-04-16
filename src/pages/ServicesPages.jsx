@@ -6,20 +6,20 @@ const ServicesPages = () => {
       <div className="service-content">
         <div className="service-text">
           <div className="service-text-left">
-            <h1>
+            <h1 data-aos="fade-right" data-aos-duration="1000">
               Selamat datang dihalaman resmi rundweb<span>.</span>
             </h1>
-            <p>
+            <p data-aos="fade-right" data-aos-duration="1000">
               Kami melayani anda dengan sebuah ide dan gagasan sehingga anda
               tidak kesulitan dalam membuat situs website impian anda.
             </p>
           </div>
-          <div className="service-text-right">
+          <div className="service-text-right" data-aos="fade-left" data-aos-duration="1000">
             <h3>Layanan yang kami sajikan sangat bervariasi</h3>
           </div>
         </div>
         <div className="service-list">
-          <div className="service-link">
+          <div className="service-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <div className="service-icon">
               <i className="bx bx-laptop"></i>
             </div>
@@ -28,7 +28,7 @@ const ServicesPages = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
             </p>
           </div>
-          <div className="service-link">
+          <div className="service-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
             <div className="service-icon">
               <i className="bx bx-notepad"></i>
             </div>
@@ -37,7 +37,7 @@ const ServicesPages = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
             </p>
           </div>
-          <div className="service-link">
+          <div className="service-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
             <div className="service-icon">
               <i className="bx bx-book-content"></i>
             </div>
@@ -46,7 +46,7 @@ const ServicesPages = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
             </p>
           </div>
-          <div className="service-link">
+          <div className="service-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
             <div className="service-icon">
               <i className="bx bx-buildings"></i>
             </div>
