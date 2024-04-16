@@ -6,17 +6,17 @@ const ServicesPages = () => {
       <div className="service-content">
         <div className="service-text">
           <div className="service-text-left">
-            <h1 data-aos="fade-right" data-aos-duration="1000">
+            <h1 data-aos="fade-up" data-aos-duration="1000">
               Selamat datang dihalaman resmi rundweb<span>.</span>
             </h1>
-            <p data-aos="fade-right" data-aos-duration="1000">
+            <p data-aos="fade-up" data-aos-duration="1000">
               Kami melayani anda dengan sebuah ide dan gagasan sehingga anda
               tidak kesulitan dalam membuat situs website impian anda.
             </p>
           </div>
           <div
             className="service-text-right"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
           >
             <h3>Layanan yang kami sajikan sangat bervariasi</h3>
