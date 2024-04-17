@@ -1,0 +1,133 @@
+.footer {
+  background-color: var(--color-blue-secondary);
+  padding: 40px 25px;
+  border-radius: 40px 40px 0 0;
+}
+
+.footer-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.footer-logo {
+  max-width: 320px;
+  width: 100%;
+}
+
+.footer-logo a {
+  color: var(--color-white);
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.footer-logo a span {
+  color: var(--color-orange);
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.footer-icon a {
+  background-color: var(--color-white-blue);
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon a i {
+  color: var(--color-black-secondary);
+  font-size: 20px;
+}
+
+.footer-contatc {
+  max-width: 320px;
+  width: 100%;
+}
+
+.footer-contatc ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-content li h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+.footer-content li {
+  color: var(--color-white-blue);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.footer-wa-link {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  width: 100%;
+  gap: 10px;
+  /* background-color: aqua; */
+}
+
+.footer-wa-link h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+.footer-wa-link p {
+  color: var(--color-white-blue);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.footer-wa-link a{
+    background-color: var(--color-white-blue);
+    letter-spacing: 1px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-blue-secondary);
+}
+
+.footer-wa-link a  i{
+    font-size: 24px;
+}
+
+.footer-bottom{
+    max-width: 1300px;
+    margin: 0 auto;
+    border-top: 1px solid var(--color-white-blue);
+    margin-top: 28px;
+    padding: 28px 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-bottom p{
+    color: var(--color-white-blue);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .2px;
+}
