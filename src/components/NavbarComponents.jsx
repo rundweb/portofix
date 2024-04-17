@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { menu } from "../data/main";
+import { Link } from "react-scroll";
 // import logo from '../assets/logo.svg'
 import "./css/navbarcomponents.css";
 const NavbarComponents = () => {
@@ -40,7 +41,11 @@ const NavbarComponents = () => {
   return (
     <header className={scrollNav ? "ok" : ""}>
       <div className={borderOpen}>
-        <div className="navbar-logo" data-aos="fade-up" data-aos-duration="1000">
+        <div
+          className="navbar-logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h1>
             RundWeb<span>.</span>
           </h1>
@@ -48,14 +53,32 @@ const NavbarComponents = () => {
         <ul className={listOpen}>
           {menu.map((menus) => {
             return (
-              <li className="nav-link" key={menus.id} data-aos="fade-up" data-aos-duration="1000">
-                <a href="#">{menus.text}</a>
+              <li
+                className="nav-link"
+                key={menus.id}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <Link
+                  to={menus.path}
+                  spy={true}
+                  smooth={true}
+                  offset={-20}
+                  duration={500}
+                >
+                  {menus.text}
+                </Link>
               </li>
             );
           })}
         </ul>
 
-        <div data-aos="fade-up" data-aos-duration="1000" className="nav-toggle" onClick={openThisMenu}>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="nav-toggle"
+          onClick={openThisMenu}
+        >
           <i className={mobileOpen}></i>
         </div>
       </div>

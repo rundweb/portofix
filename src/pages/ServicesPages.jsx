@@ -27,7 +27,7 @@ const ServicesPages = () => {
             className="service-link"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="500"
+            data-aos-delay="200"
           >
             <div className="service-no-aos">
               <div className="service-icon">
@@ -43,7 +43,7 @@ const ServicesPages = () => {
             className="service-link"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="700"
+            data-aos-delay="400"
           >
             <div className="service-no-aos">
               <div className="service-icon">
@@ -59,7 +59,7 @@ const ServicesPages = () => {
             className="service-link"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="900"
+            data-aos-delay="600"
           >
             <div className="service-no-aos">
               <div className="service-icon">
@@ -75,7 +75,7 @@ const ServicesPages = () => {
             className="service-link"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="1100"
+            data-aos-delay="800"
           >
             <div className="service-no-aos">
               <div className="service-icon">
