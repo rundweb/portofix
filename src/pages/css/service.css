@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 40px 25px;
+  padding: 20px 25px;
 }
 
 .service-content {
@@ -77,11 +77,11 @@
   align-items: flex-start;
   justify-content: center;
   background-color: var(--color-white-blue);
-  padding: 20px 25px;
+  padding: 20px 40px;
   border-radius: 20px 60px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 50px -12px;
   max-width: 280px;
-  height: 250px;
+  height: 230px;
   cursor: pointer;
 }
 

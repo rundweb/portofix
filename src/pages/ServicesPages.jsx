@@ -35,7 +35,7 @@ const ServicesPages = () => {
               </div>
               <h1>Website Builder</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
@@ -51,7 +51,7 @@ const ServicesPages = () => {
               </div>
               <h1>UI & UX Design</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const ServicesPages = () => {
               </div>
               <h1>Landing Page</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ const ServicesPages = () => {
               </div>
               <h1>Company Profile</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
