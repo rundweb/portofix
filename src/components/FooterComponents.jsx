@@ -3,7 +3,11 @@ import "./css/footercomponents.css";
 const FooterComponents = () => {
   return (
     <div className="footer" id="footer">
-      <div className="footer-content">
+      <div
+        className="footer-content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="footer-logo">
           <a href="">
             RundWeb<span>.</span>
@@ -28,7 +32,9 @@ const FooterComponents = () => {
         </div>
         <div className="footer-contatc">
           <ul>
-            <li><h3>Contact Us</h3></li>
+            <li>
+              <h3>Contact Us</h3>
+            </li>
             <li>example@gmail.com</li>
             <li>Jawa Barat, Indonesia</li>
             <li>081234567890</li>
@@ -37,10 +43,16 @@ const FooterComponents = () => {
         <div className="footer-wa-link">
           <h3>Your Dream</h3>
           <p>Jadikan website impianmu menjadi kenyataan bersama RundWeb</p>
-          <a href="">Contact Us <i className='bx bxl-whatsapp'></i></a>
+          <a href="">
+            Contact Us <i className="bx bxl-whatsapp"></i>
+          </a>
         </div>
       </div>
-      <div className="footer-bottom">
+      <div
+        className="footer-bottom"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <p>2024 RundWeb Productions. All right reserved</p>
       </div>
     </div>

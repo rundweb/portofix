@@ -1,6 +1,7 @@
 import "./css/home.css";
 import home1 from "../assets/home (1).png";
 import home2 from "../assets/home (2).png";
+import { Link } from "react-scroll";
 const HomePages = () => {
   return (
     <section className="home" id="home">
@@ -33,14 +34,25 @@ const HomePages = () => {
           buatlah website <span>impian</span> anda sekarang
         </h1>
         <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          Rundweb bekerja dengan sangat praktis dan efisien sehingga website impian yang anda inginkan akan
-          cepat terwujud dengan hasil yang memuaskan dan pastinya kualitas yang sangat baik.
-          ayo jadikan impian anda menjadi kenyataan bersama Rundweb !
+          Rundweb bekerja dengan sangat praktis dan efisien sehingga website
+          impian yang anda inginkan akan cepat terwujud dengan hasil yang
+          memuaskan dan pastinya kualitas yang sangat baik. ayo jadikan impian
+          anda menjadi kenyataan bersama Rundweb !
         </p>
 
-        <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <Link
+          href="#"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+          to="service"
+          spy={true}
+          smooth={true}
+          offset={-20}
+          duration={500}
+        >
           Learn More <i className="bx bx-right-arrow-alt"></i>
-        </a>
+        </Link>
       </div>
     </section>
   );
